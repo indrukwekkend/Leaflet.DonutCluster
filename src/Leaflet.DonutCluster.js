@@ -19,11 +19,11 @@
 
 }(function (L) {
     function roundToTwo(num) {
-        return +(Math.round(num + "e+2") + "e-2");
+        return +(Math.round(num + "e+2"));
     }
 
     function readable(val) {
-        if (val >= 1000 && val < 1000000)
+        if (val >= 10000 && val < 1000000)
             val = roundToTwo(val / 1000) + 'K'
         else if (val >= 1000000 && val < 1000000000)
             val = roundToTwo(val / 1000000) + 'M'
