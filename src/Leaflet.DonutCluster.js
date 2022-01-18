@@ -165,7 +165,7 @@
                     text.innerHTML = val;
                     t.saved = {
                         val: d.value,
-                        legend: '<span style="border: 1px solid ' + c + '; background-color:rgba(255, 255, 255, 0.7) ;border-left-width:15px; padding:1px;display:block;width:120px">' + (d.title || d.name) + ':&nbsp;' + Math.round(perc) + '%</span>'
+                        legend: '<span style="border: 1px solid ' + c + '; background-color:rgba(255, 255, 255, 0.7) ;border-left-width:15px; padding:1px;display:block;width:90px">' + (d.title || d.name) + ':&nbsp;' + Math.round(perc) + '%</span>'
                     }
                     legend.innerHTML = t.saved.legend;
                 })
